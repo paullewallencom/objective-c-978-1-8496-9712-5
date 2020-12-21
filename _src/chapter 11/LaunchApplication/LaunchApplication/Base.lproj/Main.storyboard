@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten" translatesAutoresizingMaskIntoConstraints="NO" id="mAJ-cE-6dI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="420" width="600" height="329"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="420" width="400" height="329"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFL-7X-yZf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="256" y="20" width="89" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.7390296677" blue="0.15331528799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mAJ-cE-6dI" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="IFU-ed-sE7"/>
+                            <constraint firstItem="mAJ-cE-6dI" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="JRZ-fn-Jpt"/>
+                            <constraint firstAttribute="centerX" secondItem="mAJ-cE-6dI" secondAttribute="centerX" constant="-100" id="mCB-4u-iLa"/>
+                            <constraint firstItem="sFL-7X-yZf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="247" id="o0t-kx-SwE"/>
+                            <constraint firstAttribute="centerX" secondItem="sFL-7X-yZf" secondAttribute="centerX" constant="-23.5" id="uzZ-tU-hxN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mAJ-cE-6dI"/>
+                                <exclude reference="sFL-7X-yZf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="o0t-kx-SwE"/>
+                                <exclude reference="uzZ-tU-hxN"/>
+                                <exclude reference="IFU-ed-sE7"/>
+                                <exclude reference="JRZ-fn-Jpt"/>
+                                <exclude reference="mCB-4u-iLa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="mAJ-cE-6dI"/>
+                                <include reference="sFL-7X-yZf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="o0t-kx-SwE"/>
+                                <include reference="uzZ-tU-hxN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IFU-ed-sE7"/>
+                                <exclude reference="JRZ-fn-Jpt"/>
+                                <exclude reference="mCB-4u-iLa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitten" width="1920" height="1200"/>
+    </resources>
+</document>

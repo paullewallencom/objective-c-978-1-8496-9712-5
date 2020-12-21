@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VMj-4V-naF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="h44-0q-Axz">
+            <objects>
+                <viewController id="VMj-4V-naF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bF6-Q6-GAh"/>
+                        <viewControllerLayoutGuide type="bottom" id="8WL-kK-SC8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HjQ-B4-3kf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Launch Storyboard" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCu-Pj-Bil">
+                                <rect key="frame" x="130" y="146" width="340" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="9eO-57-iwG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8WL-kK-SC8" firstAttribute="top" secondItem="lCu-Pj-Bil" secondAttribute="bottom" constant="364" id="4m2-va-ZD7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lCu-Pj-Bil" secondAttribute="trailing" constant="114" id="Cdt-nw-8Ii"/>
+                            <constraint firstItem="lCu-Pj-Bil" firstAttribute="top" secondItem="bF6-Q6-GAh" secondAttribute="bottom" constant="126" id="GhX-6v-PYd"/>
+                            <constraint firstItem="lCu-Pj-Bil" firstAttribute="top" secondItem="bF6-Q6-GAh" secondAttribute="bottom" constant="126" id="HY1-9e-kuz"/>
+                            <constraint firstItem="8WL-kK-SC8" firstAttribute="top" secondItem="lCu-Pj-Bil" secondAttribute="bottom" constant="364" id="OCF-Tb-IMN"/>
+                            <constraint firstItem="lCu-Pj-Bil" firstAttribute="leading" secondItem="HjQ-B4-3kf" secondAttribute="leadingMargin" constant="114" id="Zl0-pe-nkr"/>
+                            <constraint firstItem="lCu-Pj-Bil" firstAttribute="centerX" secondItem="HjQ-B4-3kf" secondAttribute="centerX" id="c60-j1-y4e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Cdt-nw-8Ii"/>
+                                <exclude reference="HY1-9e-kuz"/>
+                                <exclude reference="Zl0-pe-nkr"/>
+                                <exclude reference="OCF-Tb-IMN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HsF-8m-0WT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="300"/>
+        </scene>
+    </scenes>
+</document>
